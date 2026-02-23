@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment One - Custom Homepage</title>
+
+    <!-- Linking Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <h1>Anthony Burgic</h1>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+
+    <!-- Login Section -->
+<div id="login-section">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="login-message"></p>
+</div>
+
+<button id="logout-btn" onclick="logout()" style="display:none;">Logout</button>
+
+<div id="main-content" style="display:none;"></div>
+
+        <!-- Categories Dropdown -->
+        <li class="dropdown">
+            <a href="#">Categories</a>
+            <ul class="dropdown-menu">
+                <li><a href="#" onclick="filterPosts('All')">All</a></li>
+                <li><a href="#" onclick="filterPosts('Projects')">Projects</a></li>
+                <li><a href="#" onclick="filterPosts('Learning')">Learning</a></li>
+                <li><a href="#" onclick="filterPosts('Development')">Development</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="posts.html">Blog</a></li>
+            <li><a href="footer.html">Goals</a></li>
+            <li><a href="header.html">Accomplishments</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= INTRO SECTION ================= -->
+<section class="intro">
+    <h2>About Me</h2>
+    <p>
+        I am currently studying the interactive media of design program at Georgia College. 
+        <p>I'm in my third year and graduating this summer.</p>
+        <p> I have learned many skills and I have acquired many languages under my belt so far.</p>
+    </p>
+</section>
+
+<!-- ================= GOALS SECTION ================= -->
+<section id="goals">
+    <h2>My Goals After Graduation</h2>
+    <p>
+        My main goals for when I graduate college are I would like to work in the XR design world same with UX design. 
+        <p>These are my two main topics the most interested in. Plus I have some experience that I've learned within 
+            college about website design and digital marketing.
+</section>
+
+<!-- ================= ACCOMPLISHMENTS SECTION ================= -->
+<section id="accomplishments">
+    <h2>Accomplishments</h2>
+    <ul>
+        <li> I built a fully functional website for an agricultural group. Last semester and they used it 
+            as their official website for six months until they switched to another website designer</li>
+        <li> I mastered how to use blender last semester. That was a big challenge for me.</li>
+        <li> I built a fully functional showcase website meaning showcase as in you can showcase anything 
+            you want from collectable to games to our pieces.</li>
+    </ul>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>&copy; Anthony Burgic - Assignment #1</p>
+</footer>
+
+<!-- Linking JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
